@@ -18,18 +18,18 @@ let DB_URI;
 //   DB_URI = "biztime"
 // }
 
-// // These are default credentials that should be replaced 
-// const db = new Client({
-//   user: 'dbz685',
-//   host: 'localhost',
-//   password: 'postgres',
-//   database: 'postgres',
-//   port: 3000, 
-// });
+// These are default credentials that should be replaced 
+const db = new Client({
+  user: 'dbz685',
+  host: 'localhost',
+  password: 'postgres',
+  database: 'postgres',
+  port: 3000, 
+});
 
-// // Connect to the database
-// db.connect()
-//   .then(() => console.log('Connected to PostgreSQL database'))
-//   .catch(err => console.error('Error connecting to PostgreSQL database', err));
+// Connect to the database
+db.connect()
+  .then(() => console.log('Connected to PostgreSQL database'))
+  .catch(err => console.error('Error connecting to PostgreSQL database', err));
 
-// module.exports = db
+module.exports = db
