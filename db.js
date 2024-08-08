@@ -1,17 +1,17 @@
 /** Database setup for BizTime. */
 // Note - My system had a bit of trouble connecting. I have 2 methods here and both had different ways of resolving.
 
-const { Client } = require("pg");
+// const { Client } = require("pg");
 
-const client = new Client({connectionString: "postgresql:///biztime"});
+// const client = new Client({connectionString: "postgresql:///biztime"});
 
-client.connect();
+// client.connect();
 
-module.exports = client;
+// module.exports = client;
 
 // const { Client } = require('pg');
 
-// let DB_URI;
+let DB_URI;
 // if (process.env.NODE_ENV === "test") {
 //   DB_URI = "biztime_test"
 // } else {
@@ -22,8 +22,8 @@ module.exports = client;
 // const db = new Client({
 //   user: 'dbz685',
 //   host: 'localhost',
-//   password: 'abc123',
-//   database: DB_URI,
+//   password: 'postgres',
+//   database: 'postgres',
 //   port: 3000, 
 // });
 
