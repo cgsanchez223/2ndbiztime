@@ -1,0 +1,6 @@
+- Unit 37.2 - Node-pg Relationships
+- This is a continuation of the Biztime database project
+    - https://github.com/cgsanchez223/biztime
+- 2nd Part
+    - Tests are now included for companies.js and invoices.ks
+    - industries.js added with new routes and industries.sql database
